@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hearing accessibility</title>
+  <style>
+    body { font: 13px/1.4 system-ui, sans-serif; width: 460px; margin: 0; padding: 12px; color: #1b1b1b; }
+    h1 { font-size: 15px; margin: 0 0 8px; }
+    button { font: inherit; padding: 6px 10px; margin: 0 4px 8px 0; cursor: pointer; }
+    #score { font-size: 22px; font-weight: 700; }
+    #rating { margin-left: 6px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    td, th { border-bottom: 1px solid #ddd; padding: 4px; text-align: left; vertical-align: top; }
+    th { font-size: 11px; color: #555; }
+    .st { font-weight: 600; white-space: nowrap; }
+    .met { color: #116329; } .partial { color: #8a5a00; } .not_met { color: #b42318; }
+    .not_applicable, .manual { color: #666; }
+    .ev { font-size: 11px; color: #555; }
+    #saved, #status { font-size: 11px; color: #555; }
+    h2 { font-size: 13px; margin: 10px 0 4px; }
+    #videos { margin: 0; padding-left: 16px; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>Hearing accessibility</h1>
+  <button id="evaluate">Evaluate this page</button>
+  <button id="export">Download CSV (<span id="count">0</span>)</button>
+  <button id="clear">Clear</button>
+  <div id="result" hidden>
+    <span id="score"></span><span id="rating"></span>
+    <table>
+      <thead><tr><th>Criterion</th><th>Status</th><th>Weight</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <h2 id="videosTitle" hidden>YouTube videos checked</h2>
+    <ul id="videos"></ul>
+  </div>
+  <p id="status"></p>
+  <p id="saved"></p>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

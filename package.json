@@ -1,0 +1,11 @@
+{
+  "name": "hearing-accessibility-evaluator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.mjs",
+    "test:popup": "node test/test-popup.mjs"
+  },
+  "devDependencies": { "playwright-core": "^1.56.0" }
+}

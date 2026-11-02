@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Hearing Accessibility Evaluator",
+  "version": "0.1.0",
+  "description": "Evaluates the open page against hearing accessibility criteria (WCAG 2.2, e-MAG, NBR 17225).",
+  "action": {
+    "default_title": "Evaluate hearing accessibility",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"]
+}

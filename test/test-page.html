@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Evaluator test page</title></head>
+<body>
+  <a href="#content" accesskey="1">Ir para o conteúdo</a>
+  <a href="/acessibilidade" accesskey="2">Acessibilidade</a>
+  <main id="content">
+    <video controls src="video.mp4"><track kind="captions" srclang="pt" src="captions.vtt"></video>
+    <video src="video2.mp4" autoplay></video>
+    <iframe src="https://www.youtube.com/embed/abc123?cc_load_policy=1" title="Video"></iframe>
+    <iframe src="https://www.youtube.com/embed/xyz98765432?controls=0" title="Video without controls"></iframe>
+    <a href="https://www.youtube.com/@testchannel">Our channel</a>
+    <audio controls src="podcast.mp3"></audio>
+    <button><i class="fa fa-play" aria-hidden="true" title="Play"></i></button>
+    <div onclick="play()">Play</div>
+  </main>
+</body>
+</html>
